@@ -1,0 +1,28 @@
+/* Navbar */
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  color: white;
+  background: var(--linear-background);
+}
+
+/* Logo Section */
+.nav-section--logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Image */
+.logo {
+  height: 35px;
+  margin-right: 5px;
+}
+
+/* Logo Text */
+.logo-text {
+  font-weight: 700;
+  letter-spacing: -2px;
+}

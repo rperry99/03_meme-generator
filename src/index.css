@@ -1,0 +1,12 @@
+/* Variables */
+:root {
+  --linear-background: linear-gradient(to left, #439775, #053b06);
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Karla', Arial, Helvetica, sans-serif;
+}
