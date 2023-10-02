@@ -10,3 +10,9 @@
   margin: 0;
   font-family: 'Karla', Arial, Helvetica, sans-serif;
 }
+
+/* Content Container Styles */
+.container {
+  max-width: 800px;
+  margin: 36px auto 0;
+}
