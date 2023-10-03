@@ -1,4 +1,20 @@
-# React + Vite
+# Guided Project 3 - Meme Generator
+
+This project is a guided project for creating a meme generator. The data for the memes was pulled from the [ImgFlip API](https://imgflip.com/api).
+
+## What I Learned About
+
+- Event Listners
+- State
+- Conditional Rendering
+- Forms
+- Side Effects
+
+## Some things to note
+
+- I am not explicitly using the ImgFlip API. I ran the API in the browser, and pulled a list of the top 100 most popular memes, and I just put that data into `src/memeData.js`. I didn't want to deal with actually calling an API in this project, so I figured it would be easier to pull it this way.
+
+## React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
