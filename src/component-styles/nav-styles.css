@@ -26,3 +26,17 @@ nav {
   font-weight: 700;
   letter-spacing: -2px;
 }
+
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 30px;
+  }
+
+  .logo-text {
+    font-size: 1rem;
+  }
+
+  .course-name {
+    font-size: 0.8rem;
+  }
+}

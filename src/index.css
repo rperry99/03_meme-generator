@@ -16,3 +16,9 @@
   max-width: 800px;
   margin: 36px auto 0;
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
