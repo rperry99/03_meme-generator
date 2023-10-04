@@ -3,7 +3,7 @@ import memeData from '../memeData';
 import '../component-styles/form-styles.css';
 
 function Form() {
-  const [meme, setMeme] = useState();
+  const [meme, setMeme] = useState(memeData.data.memes[0].url);
   function getNewMemeImage() {
     const randomMemeIndex = Math.floor(
       Math.random() * memeData.data.memes.length
