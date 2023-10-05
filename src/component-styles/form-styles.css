@@ -32,6 +32,7 @@
 /* Meme Image */
 .form img {
   max-height: 500px;
+  max-width: 100%;
   display: block;
   margin: 15px auto 0;
 }

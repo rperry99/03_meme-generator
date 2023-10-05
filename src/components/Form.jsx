@@ -3,14 +3,21 @@ import memeData from '../memeData';
 import '../component-styles/form-styles.css';
 
 function Form() {
-  const [meme, setMeme] = useState(memeData.data.memes[0].url);
+  const [meme, setMeme] = useState({
+    topText: '',
+    bottomText: '',
+    memeImage: memeData.data.memes[14].url,
+  });
+
   function getNewMemeImage() {
     const randomMemeIndex = Math.floor(
       Math.random() * memeData.data.memes.length
     );
     const randomMeme = memeData.data.memes[randomMemeIndex].url;
-    console.log(randomMeme);
-    setMeme(randomMeme);
+    setMeme({
+      ...meme,
+      memeImage: randomMeme,
+    });
   }
 
   return (
@@ -22,7 +29,7 @@ function Form() {
       <button className="new-image" onClick={getNewMemeImage} type="button">
         Get a new meme image 🖼️
       </button>
-      <img src={meme} alt="" />
+      <img src={meme.memeImage} alt="" />
     </div>
   );
 }
