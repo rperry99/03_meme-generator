@@ -3,21 +3,26 @@ import memeData from '../memeData';
 import '../component-styles/form-styles.css';
 
 function Form() {
+  // State variables
   const [meme, setMeme] = useState({
     topText: '',
     bottomText: '',
-    memeImage: memeData.data.memes[14].url,
+    memeImage: 'http://i.imgflip.com/1bij.jpg',
   });
+
+  const [allMemeImages, setAllMemeImages] = useState(memeData);
 
   function getNewMemeImage() {
     const randomMemeIndex = Math.floor(
-      Math.random() * memeData.data.memes.length
+      Math.random() * allMemeImages.data.memes.length
     );
-    const randomMeme = memeData.data.memes[randomMemeIndex].url;
-    setMeme({
-      ...meme,
-      memeImage: randomMeme,
-    });
+
+    const randomMemeUrl = allMemeImages.data.memes[randomMemeIndex].url;
+
+    setMeme((prevMeme) => ({
+      ...prevMeme,
+      memeImage: randomMemeUrl,
+    }));
   }
 
   return (
