@@ -4,7 +4,7 @@ This project is a guided project for creating a meme generator. The data for the
 
 <p align="center">
     <img src="./demo.gif" style="max-width: 500px;"/>
-    <small>Please note, the cursor works normally, it is not showing up correctly in the gif because of the recording software not capturing it correctly.</small>
+    <small style="font-size: .8rem">Please note, the cursor works normally, it is not showing up correctly in the gif because of the recording software not capturing it correctly.</small>
 </p>
 
 ## What I Learned About
