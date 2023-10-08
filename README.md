@@ -3,7 +3,8 @@
 This project is a guided project for creating a meme generator. The data for the memes was pulled from the [ImgFlip API](https://imgflip.com/api).
 
 <p align="center">
-    <img src="./demo.gif"/>
+    <img src="./demo.gif" style="max-width: 500px;"/>
+    <small>Please note, the cursor works normally, it is not showing up correctly in the gif because of the recording software not capturing it correctly.</small>
 </p>
 
 ## What I Learned About
