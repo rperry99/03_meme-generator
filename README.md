@@ -13,6 +13,11 @@ This project is a guided project for creating a meme generator. The data for the
 ## Some things to note
 
 - I am not explicitly using the ImgFlip API. I ran the API in the browser, and pulled a list of the top 100 most popular memes, and I just put that data into `src/memeData.js`. I didn't want to deal with actually calling an API in this project, so I figured it would be easier to pull it this way.
+- All of the memes being pulled this way are not in the right format for this generator. For this project, the goal was to make a meme generator that can make a meme where it's an image, and text on the top and bottom. See example below:
+
+<p align="center">
+    <img src="https://imgflip.com/i/7thvhb" />
+</p>
 
 ## React + Vite
 
