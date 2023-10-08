@@ -27,12 +27,40 @@
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 /* Meme Image */
-.form img {
+.image-container img {
   max-height: 500px;
   max-width: 100%;
   display: block;
-  margin: 15px auto 0;
+}
+
+.image-container {
+  height: max-content;
+  width: max-content;
+  max-width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.image-container .meme-text {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  font-size: 3rem;
+}
+
+.image-container .bottom-text {
+  bottom: 10px;
+}
+
+.image-container .top-text {
+  top: 10px;
 }
