@@ -16,7 +16,7 @@ This project is a guided project for creating a meme generator. The data for the
 - All of the memes being pulled this way are not in the right format for this generator. For this project, the goal was to make a meme generator that can make a meme where it's an image, and text on the top and bottom. See example below. This generator cannot add text to any of the other formats of memes.
 
 <p align="center">
-    <a href="https://imgflip.com/i/7thvhb"><img src="https://i.imgflip.com/7thvhb.jpg" title="made at imgflip.com" style="width: 300px"/></a><div><a href="https://imgflip.com/memegenerator">from Imgflip Meme Generator</a></div>
+    <img src="https://i.imgflip.com/7thvhb.jpg" title="made at imgflip.com" style="width: 300px"/>
 </p>
 
 ## React + Vite
