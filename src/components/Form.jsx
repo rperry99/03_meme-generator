@@ -26,9 +26,11 @@ function Form() {
   }
 
   function handleTextChange(e) {
+    const { name, value } = e.target;
+
     setMeme((prevMeme) => ({
       ...prevMeme,
-      [e.target.name]: e.target.value,
+      [name]: value,
     }));
   }
 
