@@ -25,36 +25,39 @@ function Form() {
     }));
   }
 
-  function handleTopChange(e) {
+  function handleTextChange(e) {
     setMeme((prevMeme) => ({
       ...prevMeme,
-      topText: e.target.value,
-    }));
-  }
-
-  function handleBottomChange(e) {
-    setMeme((prevMeme) => ({
-      ...prevMeme,
-      bottomText: e.target.value,
+      [e.target.name]: e.target.value,
     }));
   }
 
   return (
     <div className="form">
       <div className="textbox-container">
-        <input type="text" placeholder="Top Line" onChange={handleTopChange} />
+        <input
+          type="text"
+          placeholder="Top Line"
+          onChange={handleTextChange}
+          name="topText"
+        />
         <input
           type="text"
           placeholder="Bottom Line"
-          onChange={handleBottomChange}
+          onChange={handleTextChange}
+          name="bottomText"
         />
       </div>
       <button className="new-image" onClick={getNewMemeImage} type="button">
         Get a new meme image 🖼️
       </button>
       <div className="image-container">
-        <p className="top-text meme-text">{meme.topText}</p>
-        <p className="bottom-text meme-text">{meme.bottomText}</p>
+        <p className="top-text meme-text">
+          {meme.topText !== '' && meme.topText}
+        </p>
+        <p className="bottom-text meme-text">
+          {meme.bottomText !== '' && meme.bottomText}
+        </p>
         <img src={meme.memeImage} alt="" />
       </div>
     </div>
