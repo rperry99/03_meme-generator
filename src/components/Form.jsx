@@ -40,12 +40,14 @@ function Form() {
           placeholder="Top Line"
           onChange={handleTextChange}
           name="topText"
+          value={meme.topText}
         />
         <input
           type="text"
           placeholder="Bottom Line"
           onChange={handleTextChange}
           name="bottomText"
+          value={meme.bottomText}
         />
       </div>
       <button className="new-image" onClick={getNewMemeImage} type="button">
